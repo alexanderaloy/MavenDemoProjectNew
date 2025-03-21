@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name = "browser" value = "chrome"></parameter> <!-- paramter added new since added parameter in base class to choose browser-->
+<listeners>
+	<listener class-name="generateReport.Listeners"></listener> 
+	<!-- for running of Listeners class , after running extend-reports folder will be created and extend-report.
+	html file will be genrated -> open ->click on graph-->
+</listeners>
+  <test thread-count="5" name="Test">
+    <classes>  
+    <!-- 
+      <class name="testScript.LoginTest">
+      <methods>
+      <include name = "verifyTheUserIsAbleToLoginUsingValidCredentials"></include> 
+      <include name = "verifyTheUserIsNotAbleToLoginWithIncorrectPassword"></include>
+      </methods>
+      </class>
+   -->   
+      <class name="testScript.LoginTest">
+      <methods>
+      <exclude name = "verifyTheUserIsNotAbleToLoginWithIncorrectUsername"></exclude>
+      <exclude name = "verifyTheUserIsNotAbleToLoginWithIncorrectPassword"></exclude>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+
+
+
+
+<!--
+project rightclick -> Testng -> convert to TestNG ->finish -> open testng.xml(location after pom file) -> mouse hover on "https://testng.org/testng-1.0.dtd" -> click force download
+
+used for multiple testcase running -> no need to open each class and run the testcase
+
+
+create xmlfile and run testcase
+can run different multiple testcases from different class
+
+order of execution
+Suite
+test
+classes
+class
+methods ->(include and exclude)
+
+
+<class name="testScript.LoginTest"> -> testpackage name .testclassname
+methods -> for running a specific testcase in a class : 
+<methods>
+<include name = "verifyTheUserIsAbleToLoginUsingValidCredentials"></include> 
+</methods>
+<methods>
+exclude -> will exclude the provided testcase -> include and exclude cannot be provided together in a single class
+</methods>
+-->

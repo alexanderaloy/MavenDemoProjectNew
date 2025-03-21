@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MultiBrowserTesting" parallel="tests" thread-count="2">
+  <test name="ChromeTest">
+  <parameter name = "browser" value = "chrome"></parameter>
+    <classes>     
+      <class name="testScript.LoginTest">
+      <methods>
+      <include name = "verifyTheUserIsAbleToLoginUsingValidCredentials"></include>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  <test name="EdgeTest">
+  <parameter name = "browser" value = "edge"></parameter>
+    <classes>     
+      <class name="testScript.LoginTest">
+      <methods>
+      <include name = "verifyTheUserIsAbleToLoginUsingValidCredentials"></include>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+<!-- 
+Parallel executon of chrome and edge in multiple browsers(not single browser)
+threadcount -> no of test cases run in suite , it indicates the maximum value can provide higher value
+-->
+
+
+
+<!--
+project rightclick -> Testng -> convert to TestNG ->finish -> open testng.xml(location after pom file) -> mouse hover on "https://testng.org/testng-1.0.dtd" -> click force download
+
+used for multiple testcase running -> no need to open each class and run the testcase
+
+
+create xmlfile and run testcase
+can run different multiple testcases from different class
+
+order of execution
+Suite
+test
+classes
+class
+methods ->(include and exclude)
+
+
+<class name="testScript.LoginTest"> -> testpackage name .testclassname
+methods -> for running a specific testcase in a class : 
+<methods>
+<include name = "verifyTheUserIsAbleToLoginUsingValidCredentials"></include> 
+</methods>
+<methods>
+exclude -> will exclude the provided testcase -> include and exclude cannot be provided together in a single class
+</methods>
+-->

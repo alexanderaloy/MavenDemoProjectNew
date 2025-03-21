@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name = "browser" value = "chrome"></parameter> <!-- paramter added new since added parameter in base class to choose browser-->
+  <test thread-count="5" name="Test">
+  <groups>
+  <run>
+  <include name="Regression"></include>
+  </run>
+  </groups>
+    <classes>    
+      <class name="testScript.LoginTest"/>
+      <!-- 
+      <class name="testScript.AdminUsersTest"/>
+      -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+
+
+
+
+<!--
+	added the below tags newly for running regression test
+<groups>
+  <run>
+  <include name="Regression"></include>
+  </run>
+  </groups>
+-->
+

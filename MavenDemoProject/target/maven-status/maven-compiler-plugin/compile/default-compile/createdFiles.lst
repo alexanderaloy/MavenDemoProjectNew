@@ -1,0 +1,10 @@
+Pages\AdminUsersPage.class
+Constant\Constants.class
+Utilities\ExcelUtilities.class
+Utilities\ScreenShotUtilities.class
+Utilities\WaitUtilities.class
+Pages\LoginPage.class
+Utilities\ExtendReportUtilities.class
+Pages\ManageNewsPage.class
+Utilities\FakerUtilities.class
+Utilities\PageUtilities.class

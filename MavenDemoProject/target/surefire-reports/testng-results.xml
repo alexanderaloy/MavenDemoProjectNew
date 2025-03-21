@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-21T12:29:50 IST" name="Suite" finished-at="2025-03-21T12:30:03 IST" duration-ms="12829">
+    <groups>
+      <group name="Regression">
+        <method signature="LoginTest.verifyTheUserIsAbleToLoginUsingValidCredentials()[pri:0, instance:testScript.LoginTest@25ce9dc4]" name="verifyTheUserIsAbleToLoginUsingValidCredentials" class="testScript.LoginTest"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2025-03-21T12:29:50 IST" name="Test" finished-at="2025-03-21T12:30:03 IST" duration-ms="12829">
+      <class name="testScript.LoginTest">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.LoginTest@25ce9dc4]" started-at="2025-03-21T12:29:50 IST" name="browserInitialization" finished-at="2025-03-21T12:29:55 IST" duration-ms="4771" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="verifyTheUserIsAbleToLoginUsingValidCredentials()[pri:0, instance:testScript.LoginTest@25ce9dc4]" started-at="2025-03-21T12:29:55 IST" name="verifyTheUserIsAbleToLoginUsingValidCredentials" description="verifyTheUserIsAbleToLoginUsingValidCredentials" finished-at="2025-03-21T12:29:58 IST" duration-ms="2894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheUserIsAbleToLoginUsingValidCredentials -->
+        <test-method is-config="true" signature="driverQuitandClose()[pri:0, instance:testScript.LoginTest@25ce9dc4]" started-at="2025-03-21T12:29:58 IST" name="driverQuitandClose" finished-at="2025-03-21T12:29:58 IST" duration-ms="485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuitandClose -->
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testScript.LoginTest@25ce9dc4]" started-at="2025-03-21T12:29:58 IST" name="browserInitialization" finished-at="2025-03-21T12:30:02 IST" duration-ms="3267" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="verifyTheUserIsNotAbleToLoginWithIncorrectUsernameAndPassword()[pri:0, instance:testScript.LoginTest@25ce9dc4]" started-at="2025-03-21T12:30:02 IST" name="verifyTheUserIsNotAbleToLoginWithIncorrectUsernameAndPassword" finished-at="2025-03-21T12:30:03 IST" duration-ms="1002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheUserIsNotAbleToLoginWithIncorrectUsernameAndPassword -->
+        <test-method is-config="true" signature="driverQuitandClose()[pri:0, instance:testScript.LoginTest@25ce9dc4]" started-at="2025-03-21T12:30:03 IST" name="driverQuitandClose" finished-at="2025-03-21T12:30:03 IST" duration-ms="307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuitandClose -->
+      </class> <!-- testScript.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
